@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NHANES Biomarker Dashboard</title>
+  <meta name="description" content="Interactive research tool for exploring clinical biomarker trajectories across NHANES survey cycles 2001–2018, stratified by age, sex, and cycle." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts@3.45.2/dist/apexcharts.min.js"></script>
+</head>
+<body>
+<div id="app">
+
+  <!-- ── Navigation ──────────────────────────────────────────────────── -->
+  <nav id="navbar">
+    <div class="nav-logo">
+      <div class="logo-dot"></div>
+      <span class="logo-text">NHANES Biomarker Dashboard</span>
+      <span class="logo-sub">/ Population Aging Biology</span>
+    </div>
+    <div class="nav-spacer"></div>
+    <span class="nav-badge">2001 – 2018 · 9 Cycles · CDC NHANES</span>
+  </nav>
+
+  <!-- ── Body ────────────────────────────────────────────────────────── -->
+  <div class="body-row">
+
+    <!-- ── Sidebar ─────────────────────────────────────────────────── -->
+    <aside id="sidebar">
+
+      <div class="sidebar-section">
+        <div class="sidebar-label">Biomarker</div>
+        <div class="custom-select">
+          <select id="biomarker-select">
+            <!-- Populated dynamically by app.js after data loads -->
+            <option value="total_cholesterol">Total Cholesterol (mg/dL)</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="sidebar-divider"></div>
+
+      <div class="sidebar-section">
+        <div class="sidebar-label">Sex</div>
+        <div class="pill-group" id="sex-pills">
+          <button class="pill-btn active" data-sex="all">All</button>
+          <button class="pill-btn" data-sex="male">Male</button>
+          <button class="pill-btn" data-sex="female">Female</button>
+        </div>
+      </div>
+
+      <div class="sidebar-divider"></div>
+
+      <div class="sidebar-section">
+        <div class="sidebar-label">Age Range</div>
+        <input type="range" id="age-slider" min="0" max="6" value="6" step="1" />
+        <div class="slider-row">
+          <span class="slider-val">20</span>
+          <span class="slider-val" id="age-max-label">80+</span>
+        </div>
+      </div>
+
+      <div class="sidebar-divider"></div>
+
+      <div class="sidebar-section">
+        <div class="sidebar-label">NHANES Cycles</div>
+        <input type="range" id="cycle-slider" min="0" max="8" value="8" step="1" />
+        <div class="slider-row">
+          <span class="slider-val">2001</span>
+          <span class="slider-val" id="cycle-max-label">2018</span>
+        </div>
+      </div>
+
+      <div class="sidebar-divider"></div>
+
+      <div class="sidebar-section">
+        <div class="toggle-row">
+          <span class="toggle-label">Compare mode</span>
+          <div class="toggle" id="compare-toggle" role="switch" aria-checked="false">
+            <div class="toggle-thumb"></div>
+          </div>
+        </div>
+      </div>
+
+      <div id="compare-group" style="display:none">
+        <div class="sidebar-section" style="padding-top:8px">
+          <div class="sidebar-label compare-bio-label">Compare with</div>
+          <div class="custom-select">
+            <select id="biomarker2-select">
+              <option value="hdl">HDL Cholesterol (mg/dL)</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidebar-divider"></div>
+
+      <div class="sidebar-section sidebar-footer-section">
+        <div class="obs-badge">
+          Showing <span id="observation-badge">—</span> observations
+        </div>
+      </div>
+
+    </aside>
+
+    <!-- ── Main Panel ──────────────────────────────────────────────── -->
+    <main id="main-panel">
+
+      <!-- Metric cards -->
+      <div class="metric-row">
+        <div class="metric-card">
+          <div class="metric-label">Sample Size</div>
+          <div class="metric-value" id="metric-n">—</div>
+          <div class="metric-sub">weighted observations</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-label">Cycles</div>
+          <div class="metric-value" id="metric-cycles">—</div>
+          <div class="metric-sub" id="metric-cycles-range">2001 – 2018</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-label">Age Groups</div>
+          <div class="metric-value" id="metric-age-groups">—</div>
+          <div class="metric-sub">20–29 through 80+</div>
+        </div>
+      </div>
+
+      <!-- Primary chart -->
+      <div class="chart-container">
+        <div class="chart-header">
+          <div>
+            <div class="chart-title" id="chart-title">Total Cholesterol by Age Group</div>
+            <div class="chart-sub">NHANES 2001–2018 · Weighted population estimates · 95% CI</div>
+          </div>
+        </div>
+        <div class="chart-inner" id="chart1"></div>
+      </div>
+
+      <!-- Summary stat grid -->
+      <div class="summary-row" id="summary-stats">
+        <!-- Populated by renderSummaryStats() in charts.js -->
+        <div class="stat-card"><div class="stat-label">Age Trend</div><div class="stat-value">—</div><div class="stat-note">loading…</div></div>
+        <div class="stat-card"><div class="stat-label">Peak Age</div><div class="stat-value">—</div><div class="stat-note">loading…</div></div>
+        <div class="stat-card"><div class="stat-label">Highest Cycle</div><div class="stat-value">—</div><div class="stat-note">loading…</div></div>
+        <div class="stat-card"><div class="stat-label">Lowest Cycle</div><div class="stat-value">—</div><div class="stat-note">loading…</div></div>
+      </div>
+
+      <!-- Compare mode section -->
+      <div id="chart2-container" style="display:none">
+        <div class="compare-label" id="compare-label">⇄ Compare Mode</div>
+        <div class="chart-container">
+          <div class="chart-header">
+            <div>
+              <div class="chart-title" id="chart2-title">HDL Cholesterol by Age Group</div>
+              <div class="chart-sub">NHANES 2001–2018 · Weighted population estimates · 95% CI</div>
+            </div>
+          </div>
+          <div class="chart-inner" id="chart2"></div>
+        </div>
+      </div>
+
+      <!-- Footer attribution -->
+      <footer>
+        Data: CDC National Health and Nutrition Examination Survey (NHANES) ·
+        <a href="https://www.cdc.gov/nchs/nhanes/" target="_blank" rel="noopener">cdc.gov/nchs/nhanes</a> ·
+        Estimates use MEC examination weights per NCHS analytic guidelines.
+      </footer>
+
+    </main>
+  </div>
+</div>
+
+<noscript>
+  <p style="padding:40px;text-align:center;font-family:sans-serif">
+    This dashboard requires JavaScript. Please enable JavaScript in your browser.
+  </p>
+</noscript>
+
+<!-- Script load order: filters → charts → app (dependency chain) -->
+<script src="js/filters.js"></script>
+<script src="js/charts.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
