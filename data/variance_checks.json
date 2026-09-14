@@ -1,0 +1,1486 @@
+[
+  {
+    "cycle": "2001-2002",
+    "biomarker": "total_cholesterol",
+    "age_group": "all",
+    "survey_se": 1.299059911993,
+    "independent_se": 1.299059911993
+  },
+  {
+    "cycle": "2001-2002",
+    "biomarker": "total_cholesterol",
+    "age_group": "80+",
+    "survey_se": 3.226637510822,
+    "independent_se": 3.226637510822
+  },
+  {
+    "cycle": "2001-2002",
+    "biomarker": "hdl",
+    "age_group": "all",
+    "survey_se": 0.2955031637319,
+    "independent_se": 0.2955031637319
+  },
+  {
+    "cycle": "2001-2002",
+    "biomarker": "hdl",
+    "age_group": "80+",
+    "survey_se": 1.208849375523,
+    "independent_se": 1.208849375523
+  },
+  {
+    "cycle": "2001-2002",
+    "biomarker": "ldl",
+    "age_group": "all",
+    "survey_se": 1.375695376347,
+    "independent_se": 1.375695376347
+  },
+  {
+    "cycle": "2001-2002",
+    "biomarker": "ldl",
+    "age_group": "80+",
+    "survey_se": 3.764291028116,
+    "independent_se": 3.764291028116
+  },
+  {
+    "cycle": "2001-2002",
+    "biomarker": "triglycerides",
+    "age_group": "all",
+    "survey_se": 5.086822215448,
+    "independent_se": 5.086822215448
+  },
+  {
+    "cycle": "2001-2002",
+    "biomarker": "triglycerides",
+    "age_group": "80+",
+    "survey_se": 8.728121974075,
+    "independent_se": 8.728121974075
+  },
+  {
+    "cycle": "2001-2002",
+    "biomarker": "glucose",
+    "age_group": "all",
+    "survey_se": 0.6750023253246,
+    "independent_se": 0.6750023253246
+  },
+  {
+    "cycle": "2001-2002",
+    "biomarker": "glucose",
+    "age_group": "80+",
+    "survey_se": 1.243030979231,
+    "independent_se": 1.243030979231
+  },
+  {
+    "cycle": "2001-2002",
+    "biomarker": "hba1c",
+    "age_group": "all",
+    "survey_se": 0.02111392808969,
+    "independent_se": 0.02111392808969
+  },
+  {
+    "cycle": "2001-2002",
+    "biomarker": "hba1c",
+    "age_group": "80+",
+    "survey_se": 0.04092388063432,
+    "independent_se": 0.04092388063432
+  },
+  {
+    "cycle": "2001-2002",
+    "biomarker": "crp",
+    "age_group": "all",
+    "survey_se": 0.186189067482,
+    "independent_se": 0.186189067482
+  },
+  {
+    "cycle": "2001-2002",
+    "biomarker": "crp",
+    "age_group": "80+",
+    "survey_se": 0.7252801629584,
+    "independent_se": 0.7252801629584
+  },
+  {
+    "cycle": "2001-2002",
+    "biomarker": "wbc",
+    "age_group": "all",
+    "survey_se": 0.06019673065502,
+    "independent_se": 0.06019673065502
+  },
+  {
+    "cycle": "2001-2002",
+    "biomarker": "wbc",
+    "age_group": "80+",
+    "survey_se": 0.1275722156795,
+    "independent_se": 0.1275722156795
+  },
+  {
+    "cycle": "2001-2002",
+    "biomarker": "albumin",
+    "age_group": "all",
+    "survey_se": 0.008712489391556,
+    "independent_se": 0.008712489391556
+  },
+  {
+    "cycle": "2001-2002",
+    "biomarker": "albumin",
+    "age_group": "80+",
+    "survey_se": 0.02747093444538,
+    "independent_se": 0.02747093444538
+  },
+  {
+    "cycle": "2001-2002",
+    "biomarker": "creatinine",
+    "age_group": "all",
+    "survey_se": 0.007145851539572,
+    "independent_se": 0.007145851539572
+  },
+  {
+    "cycle": "2001-2002",
+    "biomarker": "creatinine",
+    "age_group": "80+",
+    "survey_se": 0.02385290351535,
+    "independent_se": 0.02385290351535
+  },
+  {
+    "cycle": "2001-2002",
+    "biomarker": "sbp",
+    "age_group": "all",
+    "survey_se": 0.482472737059,
+    "independent_se": 0.482472737059
+  },
+  {
+    "cycle": "2001-2002",
+    "biomarker": "sbp",
+    "age_group": "80+",
+    "survey_se": 1.602326912363,
+    "independent_se": 1.602326912363
+  },
+  {
+    "cycle": "2001-2002",
+    "biomarker": "bmi",
+    "age_group": "all",
+    "survey_se": 0.1584027071138,
+    "independent_se": 0.1584027071138
+  },
+  {
+    "cycle": "2001-2002",
+    "biomarker": "bmi",
+    "age_group": "80+",
+    "survey_se": 0.5915815317602,
+    "independent_se": 0.5915815317602
+  },
+  {
+    "cycle": "2003-2004",
+    "biomarker": "total_cholesterol",
+    "age_group": "all",
+    "survey_se": 0.7214590691303,
+    "independent_se": 0.7214590691303
+  },
+  {
+    "cycle": "2003-2004",
+    "biomarker": "total_cholesterol",
+    "age_group": "80+",
+    "survey_se": 2.556161270166,
+    "independent_se": 2.556161270166
+  },
+  {
+    "cycle": "2003-2004",
+    "biomarker": "hdl",
+    "age_group": "all",
+    "survey_se": 0.3852731988998,
+    "independent_se": 0.3852731988998
+  },
+  {
+    "cycle": "2003-2004",
+    "biomarker": "hdl",
+    "age_group": "80+",
+    "survey_se": 1.088819275696,
+    "independent_se": 1.088819275696
+  },
+  {
+    "cycle": "2003-2004",
+    "biomarker": "ldl",
+    "age_group": "all",
+    "survey_se": 1.048382195934,
+    "independent_se": 1.048382195934
+  },
+  {
+    "cycle": "2003-2004",
+    "biomarker": "ldl",
+    "age_group": "80+",
+    "survey_se": 2.732892350121,
+    "independent_se": 2.732892350121
+  },
+  {
+    "cycle": "2003-2004",
+    "biomarker": "triglycerides",
+    "age_group": "all",
+    "survey_se": 4.203044772768,
+    "independent_se": 4.203044772768
+  },
+  {
+    "cycle": "2003-2004",
+    "biomarker": "triglycerides",
+    "age_group": "80+",
+    "survey_se": 6.334936789145,
+    "independent_se": 6.334936789145
+  },
+  {
+    "cycle": "2003-2004",
+    "biomarker": "glucose",
+    "age_group": "all",
+    "survey_se": 0.8823783924243,
+    "independent_se": 0.8823783924243
+  },
+  {
+    "cycle": "2003-2004",
+    "biomarker": "glucose",
+    "age_group": "80+",
+    "survey_se": 2.382462943318,
+    "independent_se": 2.382462943318
+  },
+  {
+    "cycle": "2003-2004",
+    "biomarker": "hba1c",
+    "age_group": "all",
+    "survey_se": 0.01706076753489,
+    "independent_se": 0.01706076753489
+  },
+  {
+    "cycle": "2003-2004",
+    "biomarker": "hba1c",
+    "age_group": "80+",
+    "survey_se": 0.03212695110457,
+    "independent_se": 0.03212695110457
+  },
+  {
+    "cycle": "2003-2004",
+    "biomarker": "crp",
+    "age_group": "all",
+    "survey_se": 0.1445788758742,
+    "independent_se": 0.1445788758742
+  },
+  {
+    "cycle": "2003-2004",
+    "biomarker": "crp",
+    "age_group": "80+",
+    "survey_se": 0.8865680507367,
+    "independent_se": 0.8865680507367
+  },
+  {
+    "cycle": "2003-2004",
+    "biomarker": "wbc",
+    "age_group": "all",
+    "survey_se": 0.05630281111935,
+    "independent_se": 0.05630281111935
+  },
+  {
+    "cycle": "2003-2004",
+    "biomarker": "wbc",
+    "age_group": "80+",
+    "survey_se": 0.08192220134616,
+    "independent_se": 0.08192220134616
+  },
+  {
+    "cycle": "2003-2004",
+    "biomarker": "albumin",
+    "age_group": "all",
+    "survey_se": 0.01122622355661,
+    "independent_se": 0.01122622355661
+  },
+  {
+    "cycle": "2003-2004",
+    "biomarker": "albumin",
+    "age_group": "80+",
+    "survey_se": 0.02321201715092,
+    "independent_se": 0.02321201715092
+  },
+  {
+    "cycle": "2003-2004",
+    "biomarker": "creatinine",
+    "age_group": "all",
+    "survey_se": 0.005314379271971,
+    "independent_se": 0.005314379271971
+  },
+  {
+    "cycle": "2003-2004",
+    "biomarker": "creatinine",
+    "age_group": "80+",
+    "survey_se": 0.01459464397461,
+    "independent_se": 0.01459464397461
+  },
+  {
+    "cycle": "2003-2004",
+    "biomarker": "sbp",
+    "age_group": "all",
+    "survey_se": 0.5406009465035,
+    "independent_se": 0.5406009465035
+  },
+  {
+    "cycle": "2003-2004",
+    "biomarker": "sbp",
+    "age_group": "80+",
+    "survey_se": 1.15096682369,
+    "independent_se": 1.15096682369
+  },
+  {
+    "cycle": "2003-2004",
+    "biomarker": "bmi",
+    "age_group": "all",
+    "survey_se": 0.1460092800495,
+    "independent_se": 0.1460092800495
+  },
+  {
+    "cycle": "2003-2004",
+    "biomarker": "bmi",
+    "age_group": "80+",
+    "survey_se": 0.2399070449724,
+    "independent_se": 0.2399070449724
+  },
+  {
+    "cycle": "2005-2006",
+    "biomarker": "total_cholesterol",
+    "age_group": "all",
+    "survey_se": 0.7589595170546,
+    "independent_se": 0.7589595170546
+  },
+  {
+    "cycle": "2005-2006",
+    "biomarker": "total_cholesterol",
+    "age_group": "80+",
+    "survey_se": 3.044882243239,
+    "independent_se": 3.044882243239
+  },
+  {
+    "cycle": "2005-2006",
+    "biomarker": "hdl",
+    "age_group": "all",
+    "survey_se": 0.3428202807322,
+    "independent_se": 0.3428202807322
+  },
+  {
+    "cycle": "2005-2006",
+    "biomarker": "hdl",
+    "age_group": "80+",
+    "survey_se": 0.909070198628,
+    "independent_se": 0.909070198628
+  },
+  {
+    "cycle": "2005-2006",
+    "biomarker": "ldl",
+    "age_group": "all",
+    "survey_se": 1.260158876209,
+    "independent_se": 1.260158876209
+  },
+  {
+    "cycle": "2005-2006",
+    "biomarker": "ldl",
+    "age_group": "80+",
+    "survey_se": 3.719747234448,
+    "independent_se": 3.719747234448
+  },
+  {
+    "cycle": "2005-2006",
+    "biomarker": "triglycerides",
+    "age_group": "all",
+    "survey_se": 3.448585454215,
+    "independent_se": 3.448585454215
+  },
+  {
+    "cycle": "2005-2006",
+    "biomarker": "triglycerides",
+    "age_group": "80+",
+    "survey_se": 3.168877964192,
+    "independent_se": 3.168877964192
+  },
+  {
+    "cycle": "2005-2006",
+    "biomarker": "glucose",
+    "age_group": "all",
+    "survey_se": 0.978911633179,
+    "independent_se": 0.978911633179
+  },
+  {
+    "cycle": "2005-2006",
+    "biomarker": "glucose",
+    "age_group": "80+",
+    "survey_se": 1.684085599362,
+    "independent_se": 1.684085599362
+  },
+  {
+    "cycle": "2005-2006",
+    "biomarker": "hba1c",
+    "age_group": "all",
+    "survey_se": 0.02319516678559,
+    "independent_se": 0.02319516678559
+  },
+  {
+    "cycle": "2005-2006",
+    "biomarker": "hba1c",
+    "age_group": "80+",
+    "survey_se": 0.04544548141229,
+    "independent_se": 0.04544548141229
+  },
+  {
+    "cycle": "2005-2006",
+    "biomarker": "crp",
+    "age_group": "all",
+    "survey_se": 0.1693061130618,
+    "independent_se": 0.1693061130618
+  },
+  {
+    "cycle": "2005-2006",
+    "biomarker": "crp",
+    "age_group": "80+",
+    "survey_se": 0.4505310307471,
+    "independent_se": 0.4505310307471
+  },
+  {
+    "cycle": "2005-2006",
+    "biomarker": "wbc",
+    "age_group": "all",
+    "survey_se": 0.05035625562353,
+    "independent_se": 0.05035625562353
+  },
+  {
+    "cycle": "2005-2006",
+    "biomarker": "wbc",
+    "age_group": "80+",
+    "survey_se": 0.1651344161859,
+    "independent_se": 0.1651344161859
+  },
+  {
+    "cycle": "2005-2006",
+    "biomarker": "albumin",
+    "age_group": "all",
+    "survey_se": 0.01342830488361,
+    "independent_se": 0.01342830488361
+  },
+  {
+    "cycle": "2005-2006",
+    "biomarker": "albumin",
+    "age_group": "80+",
+    "survey_se": 0.03181172369114,
+    "independent_se": 0.03181172369114
+  },
+  {
+    "cycle": "2005-2006",
+    "biomarker": "creatinine",
+    "age_group": "all",
+    "survey_se": 0.007206914650379,
+    "independent_se": 0.007206914650379
+  },
+  {
+    "cycle": "2005-2006",
+    "biomarker": "creatinine",
+    "age_group": "80+",
+    "survey_se": 0.02252669030482,
+    "independent_se": 0.02252669030482
+  },
+  {
+    "cycle": "2005-2006",
+    "biomarker": "sbp",
+    "age_group": "all",
+    "survey_se": 0.4521386802796,
+    "independent_se": 0.4521386802796
+  },
+  {
+    "cycle": "2005-2006",
+    "biomarker": "sbp",
+    "age_group": "80+",
+    "survey_se": 1.670298782931,
+    "independent_se": 1.670298782931
+  },
+  {
+    "cycle": "2005-2006",
+    "biomarker": "bmi",
+    "age_group": "all",
+    "survey_se": 0.2288196424552,
+    "independent_se": 0.2288196424552
+  },
+  {
+    "cycle": "2005-2006",
+    "biomarker": "bmi",
+    "age_group": "80+",
+    "survey_se": 0.2574916630024,
+    "independent_se": 0.2574916630024
+  },
+  {
+    "cycle": "2007-2008",
+    "biomarker": "total_cholesterol",
+    "age_group": "all",
+    "survey_se": 0.8274237893082,
+    "independent_se": 0.8274237893082
+  },
+  {
+    "cycle": "2007-2008",
+    "biomarker": "total_cholesterol",
+    "age_group": "80+",
+    "survey_se": 2.192236310975,
+    "independent_se": 2.192236310975
+  },
+  {
+    "cycle": "2007-2008",
+    "biomarker": "hdl",
+    "age_group": "all",
+    "survey_se": 0.5333494018231,
+    "independent_se": 0.5333494018231
+  },
+  {
+    "cycle": "2007-2008",
+    "biomarker": "hdl",
+    "age_group": "80+",
+    "survey_se": 0.846094261776,
+    "independent_se": 0.846094261776
+  },
+  {
+    "cycle": "2007-2008",
+    "biomarker": "ldl",
+    "age_group": "all",
+    "survey_se": 0.8238428491242,
+    "independent_se": 0.8238428491242
+  },
+  {
+    "cycle": "2007-2008",
+    "biomarker": "ldl",
+    "age_group": "80+",
+    "survey_se": 3.262509123979,
+    "independent_se": 3.262509123979
+  },
+  {
+    "cycle": "2007-2008",
+    "biomarker": "triglycerides",
+    "age_group": "all",
+    "survey_se": 2.590352474572,
+    "independent_se": 2.590352474572
+  },
+  {
+    "cycle": "2007-2008",
+    "biomarker": "triglycerides",
+    "age_group": "80+",
+    "survey_se": 5.62971873271,
+    "independent_se": 5.62971873271
+  },
+  {
+    "cycle": "2007-2008",
+    "biomarker": "glucose",
+    "age_group": "all",
+    "survey_se": 0.6869800707758,
+    "independent_se": 0.6869800707758
+  },
+  {
+    "cycle": "2007-2008",
+    "biomarker": "glucose",
+    "age_group": "80+",
+    "survey_se": 2.087203524783,
+    "independent_se": 2.087203524783
+  },
+  {
+    "cycle": "2007-2008",
+    "biomarker": "hba1c",
+    "age_group": "all",
+    "survey_se": 0.02563240668266,
+    "independent_se": 0.02563240668266
+  },
+  {
+    "cycle": "2007-2008",
+    "biomarker": "hba1c",
+    "age_group": "80+",
+    "survey_se": 0.04184452774124,
+    "independent_se": 0.04184452774124
+  },
+  {
+    "cycle": "2007-2008",
+    "biomarker": "crp",
+    "age_group": "all",
+    "survey_se": 0.09850596531692,
+    "independent_se": 0.09850596531692
+  },
+  {
+    "cycle": "2007-2008",
+    "biomarker": "crp",
+    "age_group": "80+",
+    "survey_se": 0.3502021649464,
+    "independent_se": 0.3502021649464
+  },
+  {
+    "cycle": "2007-2008",
+    "biomarker": "wbc",
+    "age_group": "all",
+    "survey_se": 0.0781428101373,
+    "independent_se": 0.0781428101373
+  },
+  {
+    "cycle": "2007-2008",
+    "biomarker": "wbc",
+    "age_group": "80+",
+    "survey_se": 0.1431850451453,
+    "independent_se": 0.1431850451453
+  },
+  {
+    "cycle": "2007-2008",
+    "biomarker": "albumin",
+    "age_group": "all",
+    "survey_se": 0.00619194108005,
+    "independent_se": 0.00619194108005
+  },
+  {
+    "cycle": "2007-2008",
+    "biomarker": "albumin",
+    "age_group": "80+",
+    "survey_se": 0.02178105290358,
+    "independent_se": 0.02178105290358
+  },
+  {
+    "cycle": "2007-2008",
+    "biomarker": "creatinine",
+    "age_group": "all",
+    "survey_se": 0.00687578896605,
+    "independent_se": 0.00687578896605
+  },
+  {
+    "cycle": "2007-2008",
+    "biomarker": "creatinine",
+    "age_group": "80+",
+    "survey_se": 0.0199383630372,
+    "independent_se": 0.0199383630372
+  },
+  {
+    "cycle": "2007-2008",
+    "biomarker": "sbp",
+    "age_group": "all",
+    "survey_se": 0.3685149734641,
+    "independent_se": 0.3685149734641
+  },
+  {
+    "cycle": "2007-2008",
+    "biomarker": "sbp",
+    "age_group": "80+",
+    "survey_se": 1.191201279056,
+    "independent_se": 1.191201279056
+  },
+  {
+    "cycle": "2007-2008",
+    "biomarker": "bmi",
+    "age_group": "all",
+    "survey_se": 0.1634262657503,
+    "independent_se": 0.1634262657503
+  },
+  {
+    "cycle": "2007-2008",
+    "biomarker": "bmi",
+    "age_group": "80+",
+    "survey_se": 0.2139697444995,
+    "independent_se": 0.2139697444995
+  },
+  {
+    "cycle": "2009-2010",
+    "biomarker": "total_cholesterol",
+    "age_group": "all",
+    "survey_se": 0.9181712804666,
+    "independent_se": 0.9181712804666
+  },
+  {
+    "cycle": "2009-2010",
+    "biomarker": "total_cholesterol",
+    "age_group": "80+",
+    "survey_se": 1.723270379928,
+    "independent_se": 1.723270379928
+  },
+  {
+    "cycle": "2009-2010",
+    "biomarker": "hdl",
+    "age_group": "all",
+    "survey_se": 0.4146393179527,
+    "independent_se": 0.4146393179527
+  },
+  {
+    "cycle": "2009-2010",
+    "biomarker": "hdl",
+    "age_group": "80+",
+    "survey_se": 0.9400962590575,
+    "independent_se": 0.9400962590575
+  },
+  {
+    "cycle": "2009-2010",
+    "biomarker": "ldl",
+    "age_group": "all",
+    "survey_se": 1.058653735342,
+    "independent_se": 1.058653735342
+  },
+  {
+    "cycle": "2009-2010",
+    "biomarker": "ldl",
+    "age_group": "80+",
+    "survey_se": 2.786957293763,
+    "independent_se": 2.786957293763
+  },
+  {
+    "cycle": "2009-2010",
+    "biomarker": "triglycerides",
+    "age_group": "all",
+    "survey_se": 2.220414574767,
+    "independent_se": 2.220414574767
+  },
+  {
+    "cycle": "2009-2010",
+    "biomarker": "triglycerides",
+    "age_group": "80+",
+    "survey_se": 2.754419612748,
+    "independent_se": 2.754419612748
+  },
+  {
+    "cycle": "2009-2010",
+    "biomarker": "glucose",
+    "age_group": "all",
+    "survey_se": 0.8406528079244,
+    "independent_se": 0.8406528079244
+  },
+  {
+    "cycle": "2009-2010",
+    "biomarker": "glucose",
+    "age_group": "80+",
+    "survey_se": 1.823195544176,
+    "independent_se": 1.823195544176
+  },
+  {
+    "cycle": "2009-2010",
+    "biomarker": "hba1c",
+    "age_group": "all",
+    "survey_se": 0.01712344783225,
+    "independent_se": 0.01712344783225
+  },
+  {
+    "cycle": "2009-2010",
+    "biomarker": "hba1c",
+    "age_group": "80+",
+    "survey_se": 0.03236712593801,
+    "independent_se": 0.03236712593801
+  },
+  {
+    "cycle": "2009-2010",
+    "biomarker": "crp",
+    "age_group": "all",
+    "survey_se": 0.1504317509371,
+    "independent_se": 0.1504317509371
+  },
+  {
+    "cycle": "2009-2010",
+    "biomarker": "crp",
+    "age_group": "80+",
+    "survey_se": 0.3675813838494,
+    "independent_se": 0.3675813838494
+  },
+  {
+    "cycle": "2009-2010",
+    "biomarker": "wbc",
+    "age_group": "all",
+    "survey_se": 0.0301667104621,
+    "independent_se": 0.0301667104621
+  },
+  {
+    "cycle": "2009-2010",
+    "biomarker": "wbc",
+    "age_group": "80+",
+    "survey_se": 0.1438524627725,
+    "independent_se": 0.1438524627725
+  },
+  {
+    "cycle": "2009-2010",
+    "biomarker": "albumin",
+    "age_group": "all",
+    "survey_se": 0.01271850731119,
+    "independent_se": 0.01271850731119
+  },
+  {
+    "cycle": "2009-2010",
+    "biomarker": "albumin",
+    "age_group": "80+",
+    "survey_se": 0.01672957638048,
+    "independent_se": 0.01672957638048
+  },
+  {
+    "cycle": "2009-2010",
+    "biomarker": "creatinine",
+    "age_group": "all",
+    "survey_se": 0.006587509439843,
+    "independent_se": 0.006587509439843
+  },
+  {
+    "cycle": "2009-2010",
+    "biomarker": "creatinine",
+    "age_group": "80+",
+    "survey_se": 0.0262522826994,
+    "independent_se": 0.0262522826994
+  },
+  {
+    "cycle": "2009-2010",
+    "biomarker": "sbp",
+    "age_group": "all",
+    "survey_se": 0.4906080561567,
+    "independent_se": 0.4906080561567
+  },
+  {
+    "cycle": "2009-2010",
+    "biomarker": "sbp",
+    "age_group": "80+",
+    "survey_se": 1.134429094012,
+    "independent_se": 1.134429094012
+  },
+  {
+    "cycle": "2009-2010",
+    "biomarker": "bmi",
+    "age_group": "all",
+    "survey_se": 0.1283701423344,
+    "independent_se": 0.1283701423344
+  },
+  {
+    "cycle": "2009-2010",
+    "biomarker": "bmi",
+    "age_group": "80+",
+    "survey_se": 0.289052086631,
+    "independent_se": 0.289052086631
+  },
+  {
+    "cycle": "2011-2012",
+    "biomarker": "total_cholesterol",
+    "age_group": "all",
+    "survey_se": 0.9777749639451,
+    "independent_se": 0.9777749639451
+  },
+  {
+    "cycle": "2011-2012",
+    "biomarker": "total_cholesterol",
+    "age_group": "80+",
+    "survey_se": 3.093919729112,
+    "independent_se": 3.093919729112
+  },
+  {
+    "cycle": "2011-2012",
+    "biomarker": "hdl",
+    "age_group": "all",
+    "survey_se": 0.4943468133595,
+    "independent_se": 0.4943468133595
+  },
+  {
+    "cycle": "2011-2012",
+    "biomarker": "hdl",
+    "age_group": "80+",
+    "survey_se": 1.181359136123,
+    "independent_se": 1.181359136123
+  },
+  {
+    "cycle": "2011-2012",
+    "biomarker": "ldl",
+    "age_group": "all",
+    "survey_se": 0.9768428999651,
+    "independent_se": 0.9768428999651
+  },
+  {
+    "cycle": "2011-2012",
+    "biomarker": "ldl",
+    "age_group": "80+",
+    "survey_se": 3.841395433226,
+    "independent_se": 3.841395433226
+  },
+  {
+    "cycle": "2011-2012",
+    "biomarker": "triglycerides",
+    "age_group": "all",
+    "survey_se": 4.641543363821,
+    "independent_se": 4.641543363821
+  },
+  {
+    "cycle": "2011-2012",
+    "biomarker": "triglycerides",
+    "age_group": "80+",
+    "survey_se": 4.605823156921,
+    "independent_se": 4.605823156921
+  },
+  {
+    "cycle": "2011-2012",
+    "biomarker": "glucose",
+    "age_group": "all",
+    "survey_se": 1.200112947912,
+    "independent_se": 1.200112947912
+  },
+  {
+    "cycle": "2011-2012",
+    "biomarker": "glucose",
+    "age_group": "80+",
+    "survey_se": 3.49372966834,
+    "independent_se": 3.49372966834
+  },
+  {
+    "cycle": "2011-2012",
+    "biomarker": "hba1c",
+    "age_group": "all",
+    "survey_se": 0.0254698941562,
+    "independent_se": 0.0254698941562
+  },
+  {
+    "cycle": "2011-2012",
+    "biomarker": "hba1c",
+    "age_group": "80+",
+    "survey_se": 0.03294626239739,
+    "independent_se": 0.03294626239739
+  },
+  {
+    "cycle": "2011-2012",
+    "biomarker": "wbc",
+    "age_group": "all",
+    "survey_se": 0.09120255130167,
+    "independent_se": 0.09120255130167
+  },
+  {
+    "cycle": "2011-2012",
+    "biomarker": "wbc",
+    "age_group": "80+",
+    "survey_se": 0.1230978177019,
+    "independent_se": 0.1230978177019
+  },
+  {
+    "cycle": "2011-2012",
+    "biomarker": "albumin",
+    "age_group": "all",
+    "survey_se": 0.009659708630168,
+    "independent_se": 0.009659708630168
+  },
+  {
+    "cycle": "2011-2012",
+    "biomarker": "albumin",
+    "age_group": "80+",
+    "survey_se": 0.01493317600746,
+    "independent_se": 0.01493317600746
+  },
+  {
+    "cycle": "2011-2012",
+    "biomarker": "creatinine",
+    "age_group": "all",
+    "survey_se": 0.005991095925429,
+    "independent_se": 0.005991095925429
+  },
+  {
+    "cycle": "2011-2012",
+    "biomarker": "creatinine",
+    "age_group": "80+",
+    "survey_se": 0.03505057831952,
+    "independent_se": 0.03505057831952
+  },
+  {
+    "cycle": "2011-2012",
+    "biomarker": "sbp",
+    "age_group": "all",
+    "survey_se": 0.6494246243683,
+    "independent_se": 0.6494246243683
+  },
+  {
+    "cycle": "2011-2012",
+    "biomarker": "sbp",
+    "age_group": "80+",
+    "survey_se": 1.962817502395,
+    "independent_se": 1.962817502395
+  },
+  {
+    "cycle": "2011-2012",
+    "biomarker": "bmi",
+    "age_group": "all",
+    "survey_se": 0.2097235586726,
+    "independent_se": 0.2097235586726
+  },
+  {
+    "cycle": "2011-2012",
+    "biomarker": "bmi",
+    "age_group": "80+",
+    "survey_se": 0.3053324843578,
+    "independent_se": 0.3053324843578
+  },
+  {
+    "cycle": "2013-2014",
+    "biomarker": "total_cholesterol",
+    "age_group": "all",
+    "survey_se": 0.8591679037498,
+    "independent_se": 0.8591679037498
+  },
+  {
+    "cycle": "2013-2014",
+    "biomarker": "total_cholesterol",
+    "age_group": "80+",
+    "survey_se": 2.814556251235,
+    "independent_se": 2.814556251235
+  },
+  {
+    "cycle": "2013-2014",
+    "biomarker": "hdl",
+    "age_group": "all",
+    "survey_se": 0.2899879227465,
+    "independent_se": 0.2899879227465
+  },
+  {
+    "cycle": "2013-2014",
+    "biomarker": "hdl",
+    "age_group": "80+",
+    "survey_se": 1.120769856492,
+    "independent_se": 1.120769856492
+  },
+  {
+    "cycle": "2013-2014",
+    "biomarker": "ldl",
+    "age_group": "all",
+    "survey_se": 0.8895065365078,
+    "independent_se": 0.8895065365078
+  },
+  {
+    "cycle": "2013-2014",
+    "biomarker": "ldl",
+    "age_group": "80+",
+    "survey_se": 3.301784043575,
+    "independent_se": 3.301784043575
+  },
+  {
+    "cycle": "2013-2014",
+    "biomarker": "triglycerides",
+    "age_group": "all",
+    "survey_se": 3.127303002392,
+    "independent_se": 3.127303002392
+  },
+  {
+    "cycle": "2013-2014",
+    "biomarker": "triglycerides",
+    "age_group": "80+",
+    "survey_se": 5.639596847069,
+    "independent_se": 5.639596847069
+  },
+  {
+    "cycle": "2013-2014",
+    "biomarker": "glucose",
+    "age_group": "all",
+    "survey_se": 0.6646005749128,
+    "independent_se": 0.6646005749128
+  },
+  {
+    "cycle": "2013-2014",
+    "biomarker": "glucose",
+    "age_group": "80+",
+    "survey_se": 2.210011456089,
+    "independent_se": 2.210011456089
+  },
+  {
+    "cycle": "2013-2014",
+    "biomarker": "hba1c",
+    "age_group": "all",
+    "survey_se": 0.01412041261517,
+    "independent_se": 0.01412041261517
+  },
+  {
+    "cycle": "2013-2014",
+    "biomarker": "hba1c",
+    "age_group": "80+",
+    "survey_se": 0.03139253379754,
+    "independent_se": 0.03139253379754
+  },
+  {
+    "cycle": "2013-2014",
+    "biomarker": "wbc",
+    "age_group": "all",
+    "survey_se": 0.06437139448267,
+    "independent_se": 0.06437139448267
+  },
+  {
+    "cycle": "2013-2014",
+    "biomarker": "wbc",
+    "age_group": "80+",
+    "survey_se": 0.2188325564646,
+    "independent_se": 0.2188325564646
+  },
+  {
+    "cycle": "2013-2014",
+    "biomarker": "albumin",
+    "age_group": "all",
+    "survey_se": 0.007644493849247,
+    "independent_se": 0.007644493849247
+  },
+  {
+    "cycle": "2013-2014",
+    "biomarker": "albumin",
+    "age_group": "80+",
+    "survey_se": 0.01489307901805,
+    "independent_se": 0.01489307901805
+  },
+  {
+    "cycle": "2013-2014",
+    "biomarker": "creatinine",
+    "age_group": "all",
+    "survey_se": 0.008154671257577,
+    "independent_se": 0.008154671257577
+  },
+  {
+    "cycle": "2013-2014",
+    "biomarker": "creatinine",
+    "age_group": "80+",
+    "survey_se": 0.03692022640524,
+    "independent_se": 0.03692022640524
+  },
+  {
+    "cycle": "2013-2014",
+    "biomarker": "sbp",
+    "age_group": "all",
+    "survey_se": 0.3134866637088,
+    "independent_se": 0.3134866637088
+  },
+  {
+    "cycle": "2013-2014",
+    "biomarker": "sbp",
+    "age_group": "80+",
+    "survey_se": 1.80185733486,
+    "independent_se": 1.80185733486
+  },
+  {
+    "cycle": "2013-2014",
+    "biomarker": "bmi",
+    "age_group": "all",
+    "survey_se": 0.1731135215188,
+    "independent_se": 0.1731135215188
+  },
+  {
+    "cycle": "2013-2014",
+    "biomarker": "bmi",
+    "age_group": "80+",
+    "survey_se": 0.3019244364782,
+    "independent_se": 0.3019244364782
+  },
+  {
+    "cycle": "2015-2016",
+    "biomarker": "total_cholesterol",
+    "age_group": "all",
+    "survey_se": 1.339466955196,
+    "independent_se": 1.339466955196
+  },
+  {
+    "cycle": "2015-2016",
+    "biomarker": "total_cholesterol",
+    "age_group": "80+",
+    "survey_se": 1.315228483319,
+    "independent_se": 1.315228483319
+  },
+  {
+    "cycle": "2015-2016",
+    "biomarker": "hdl",
+    "age_group": "all",
+    "survey_se": 0.7405164094832,
+    "independent_se": 0.7405164094832
+  },
+  {
+    "cycle": "2015-2016",
+    "biomarker": "hdl",
+    "age_group": "80+",
+    "survey_se": 1.172668668271,
+    "independent_se": 1.172668668271
+  },
+  {
+    "cycle": "2015-2016",
+    "biomarker": "ldl",
+    "age_group": "all",
+    "survey_se": 1.081031100767,
+    "independent_se": 1.081031100767
+  },
+  {
+    "cycle": "2015-2016",
+    "biomarker": "ldl",
+    "age_group": "80+",
+    "survey_se": 2.511990372747,
+    "independent_se": 2.511990372747
+  },
+  {
+    "cycle": "2015-2016",
+    "biomarker": "triglycerides",
+    "age_group": "all",
+    "survey_se": 2.178779034834,
+    "independent_se": 2.178779034834
+  },
+  {
+    "cycle": "2015-2016",
+    "biomarker": "triglycerides",
+    "age_group": "80+",
+    "survey_se": 5.047221892608,
+    "independent_se": 5.047221892608
+  },
+  {
+    "cycle": "2015-2016",
+    "biomarker": "glucose",
+    "age_group": "all",
+    "survey_se": 0.7298525834572,
+    "independent_se": 0.7298525834572
+  },
+  {
+    "cycle": "2015-2016",
+    "biomarker": "glucose",
+    "age_group": "80+",
+    "survey_se": 2.242304980518,
+    "independent_se": 2.242304980518
+  },
+  {
+    "cycle": "2015-2016",
+    "biomarker": "hba1c",
+    "age_group": "all",
+    "survey_se": 0.033477470819,
+    "independent_se": 0.033477470819
+  },
+  {
+    "cycle": "2015-2016",
+    "biomarker": "hba1c",
+    "age_group": "80+",
+    "survey_se": 0.04420995066775,
+    "independent_se": 0.04420995066775
+  },
+  {
+    "cycle": "2015-2016",
+    "biomarker": "crp",
+    "age_group": "all",
+    "survey_se": 0.1742784898031,
+    "independent_se": 0.1742784898031
+  },
+  {
+    "cycle": "2015-2016",
+    "biomarker": "crp",
+    "age_group": "80+",
+    "survey_se": 0.3184428250518,
+    "independent_se": 0.3184428250518
+  },
+  {
+    "cycle": "2015-2016",
+    "biomarker": "wbc",
+    "age_group": "all",
+    "survey_se": 0.07724577219252,
+    "independent_se": 0.07724577219252
+  },
+  {
+    "cycle": "2015-2016",
+    "biomarker": "wbc",
+    "age_group": "80+",
+    "survey_se": 0.1986757062317,
+    "independent_se": 0.1986757062317
+  },
+  {
+    "cycle": "2015-2016",
+    "biomarker": "albumin",
+    "age_group": "all",
+    "survey_se": 0.01269595013043,
+    "independent_se": 0.01269595013043
+  },
+  {
+    "cycle": "2015-2016",
+    "biomarker": "albumin",
+    "age_group": "80+",
+    "survey_se": 0.02428758766929,
+    "independent_se": 0.02428758766929
+  },
+  {
+    "cycle": "2015-2016",
+    "biomarker": "creatinine",
+    "age_group": "all",
+    "survey_se": 0.007814231199879,
+    "independent_se": 0.007814231199879
+  },
+  {
+    "cycle": "2015-2016",
+    "biomarker": "creatinine",
+    "age_group": "80+",
+    "survey_se": 0.0254966994371,
+    "independent_se": 0.0254966994371
+  },
+  {
+    "cycle": "2015-2016",
+    "biomarker": "sbp",
+    "age_group": "all",
+    "survey_se": 0.4631065134696,
+    "independent_se": 0.4631065134696
+  },
+  {
+    "cycle": "2015-2016",
+    "biomarker": "sbp",
+    "age_group": "80+",
+    "survey_se": 1.191827706165,
+    "independent_se": 1.191827706165
+  },
+  {
+    "cycle": "2015-2016",
+    "biomarker": "bmi",
+    "age_group": "all",
+    "survey_se": 0.2531968321038,
+    "independent_se": 0.2531968321038
+  },
+  {
+    "cycle": "2015-2016",
+    "biomarker": "bmi",
+    "age_group": "80+",
+    "survey_se": 0.3837021829503,
+    "independent_se": 0.3837021829503
+  },
+  {
+    "cycle": "2017-2018",
+    "biomarker": "total_cholesterol",
+    "age_group": "all",
+    "survey_se": 1.760881708062,
+    "independent_se": 1.760881708062
+  },
+  {
+    "cycle": "2017-2018",
+    "biomarker": "total_cholesterol",
+    "age_group": "80+",
+    "survey_se": 3.162099054023,
+    "independent_se": 3.162099054023
+  },
+  {
+    "cycle": "2017-2018",
+    "biomarker": "hdl",
+    "age_group": "all",
+    "survey_se": 0.4888705918628,
+    "independent_se": 0.4888705918628
+  },
+  {
+    "cycle": "2017-2018",
+    "biomarker": "hdl",
+    "age_group": "80+",
+    "survey_se": 0.7481244069617,
+    "independent_se": 0.7481244069617
+  },
+  {
+    "cycle": "2017-2018",
+    "biomarker": "ldl",
+    "age_group": "all",
+    "survey_se": 1.482296189821,
+    "independent_se": 1.482296189821
+  },
+  {
+    "cycle": "2017-2018",
+    "biomarker": "ldl",
+    "age_group": "80+",
+    "survey_se": 3.535399872682,
+    "independent_se": 3.535399872682
+  },
+  {
+    "cycle": "2017-2018",
+    "biomarker": "triglycerides",
+    "age_group": "all",
+    "survey_se": 2.972347405309,
+    "independent_se": 2.972347405309
+  },
+  {
+    "cycle": "2017-2018",
+    "biomarker": "triglycerides",
+    "age_group": "80+",
+    "survey_se": 4.849592386153,
+    "independent_se": 4.849592386153
+  },
+  {
+    "cycle": "2017-2018",
+    "biomarker": "glucose",
+    "age_group": "all",
+    "survey_se": 0.9600857160995,
+    "independent_se": 0.9600857160995
+  },
+  {
+    "cycle": "2017-2018",
+    "biomarker": "glucose",
+    "age_group": "80+",
+    "survey_se": 4.299017137507,
+    "independent_se": 4.299017137507
+  },
+  {
+    "cycle": "2017-2018",
+    "biomarker": "hba1c",
+    "age_group": "all",
+    "survey_se": 0.01684173413804,
+    "independent_se": 0.01684173413804
+  },
+  {
+    "cycle": "2017-2018",
+    "biomarker": "hba1c",
+    "age_group": "80+",
+    "survey_se": 0.05787525004323,
+    "independent_se": 0.05787525004323
+  },
+  {
+    "cycle": "2017-2018",
+    "biomarker": "crp",
+    "age_group": "all",
+    "survey_se": 0.1632879557082,
+    "independent_se": 0.1632879557082
+  },
+  {
+    "cycle": "2017-2018",
+    "biomarker": "crp",
+    "age_group": "80+",
+    "survey_se": 0.536274494443,
+    "independent_se": 0.536274494443
+  },
+  {
+    "cycle": "2017-2018",
+    "biomarker": "wbc",
+    "age_group": "all",
+    "survey_se": 0.09048482386873,
+    "independent_se": 0.09048482386873
+  },
+  {
+    "cycle": "2017-2018",
+    "biomarker": "wbc",
+    "age_group": "80+",
+    "survey_se": 0.6166275696591,
+    "independent_se": 0.6166275696591
+  },
+  {
+    "cycle": "2017-2018",
+    "biomarker": "albumin",
+    "age_group": "all",
+    "survey_se": 0.0156499180422,
+    "independent_se": 0.0156499180422
+  },
+  {
+    "cycle": "2017-2018",
+    "biomarker": "albumin",
+    "age_group": "80+",
+    "survey_se": 0.02749878812424,
+    "independent_se": 0.02749878812424
+  },
+  {
+    "cycle": "2017-2018",
+    "biomarker": "creatinine",
+    "age_group": "all",
+    "survey_se": 0.006046607222547,
+    "independent_se": 0.006046607222547
+  },
+  {
+    "cycle": "2017-2018",
+    "biomarker": "creatinine",
+    "age_group": "80+",
+    "survey_se": 0.03410110156774,
+    "independent_se": 0.03410110156774
+  },
+  {
+    "cycle": "2017-2018",
+    "biomarker": "sbp",
+    "age_group": "all",
+    "survey_se": 0.4751773632084,
+    "independent_se": 0.4751773632084
+  },
+  {
+    "cycle": "2017-2018",
+    "biomarker": "sbp",
+    "age_group": "80+",
+    "survey_se": 1.431261961752,
+    "independent_se": 1.431261961752
+  },
+  {
+    "cycle": "2017-2018",
+    "biomarker": "bmi",
+    "age_group": "all",
+    "survey_se": 0.2611395412263,
+    "independent_se": 0.2611395412263
+  },
+  {
+    "cycle": "2017-2018",
+    "biomarker": "bmi",
+    "age_group": "80+",
+    "survey_se": 0.3779410057569,
+    "independent_se": 0.3779410057569
+  }
+]
