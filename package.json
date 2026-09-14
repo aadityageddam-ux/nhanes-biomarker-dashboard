@@ -1,0 +1,11 @@
+{
+  "name": "nhanes-biomarker-profiles",
+  "private": true,
+  "scripts": {
+    "test": "node --test tests/data.test.js",
+    "test:browser": "node tests/browser.cjs"
+  },
+  "devDependencies": {
+    "playwright": "1.62.1"
+  }
+}
