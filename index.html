@@ -1,187 +1,164 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NHANES Biomarker Dashboard</title>
-  <meta name="description" content="Interactive research tool for exploring clinical biomarker trajectories across NHANES survey cycles 2001–2018, stratified by age, sex, and cycle." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/styles.css" />
-  <script src="https://cdn.jsdelivr.net/npm/apexcharts@3.45.2/dist/apexcharts.min.js"></script>
-</head>
-<body>
-<div id="app">
-
-  <!-- ── Navigation ──────────────────────────────────────────────────── -->
-  <nav id="navbar">
-    <div class="nav-logo">
-      <div class="logo-dot"></div>
-      <span class="logo-text">NHANES Biomarker Dashboard</span>
-      <span class="logo-sub">/ Population Aging Biology</span>
-    </div>
-    <div class="nav-spacer"></div>
-    <span class="nav-badge">2001 – 2018 · 9 Cycles · CDC NHANES</span>
-  </nav>
-
-  <!-- ── Body ────────────────────────────────────────────────────────── -->
-  <div class="body-row">
-
-    <!-- ── Sidebar ─────────────────────────────────────────────────── -->
-    <aside id="sidebar">
-
-      <div class="sidebar-section">
-        <div class="sidebar-label">Biomarker</div>
-        <div class="custom-select">
-          <select id="biomarker-select">
-            <!-- Populated dynamically by app.js after data loads -->
-            <option value="total_cholesterol">Total Cholesterol (mg/dL)</option>
-          </select>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Separate NHANES age and sex profiles using real CDC data and survey-design confidence intervals."
+    />
+    <title>NHANES · Biomarker profiles</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/filters.js" defer></script>
+    <script src="js/charts.js" defer></script>
+    <script src="js/app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip" href="#profiles">Skip to profiles</a>
+    <header>
+      <a class="brand" href="./">NHANES <span>/ BIOMARKER PROFILES</span></a
+      ><a href="#methods">Methods & sources ↗</a>
+    </header>
+    <main>
+      <section class="intro">
+        <p class="eyebrow">REAL CDC DATA · EXPLORATORY ANALYSIS</p>
+        <h1>A snapshot of health,<br /><em>one survey cycle at a time.</em></h1>
+        <p>
+          Explore how clinical measurements differ across adult age groups and
+          recorded sex in NHANES. Each profile describes different people
+          surveyed in one period—not how an individual changes with age.
+        </p>
+      </section>
+      <section id="profiles" aria-label="Biomarker profiles">
+        <div class="controls">
+          <label>Survey cycle<select id="cycle" disabled></select></label
+          ><label>Biomarker<select id="biomarker" disabled></select></label
+          ><label
+            >Recorded sex<select id="sex" disabled>
+              <option value="all">All adults</option>
+              <option value="1">Male</option>
+              <option value="2">Female</option>
+            </select></label
+          >
         </div>
-      </div>
-
-      <div class="sidebar-divider"></div>
-
-      <div class="sidebar-section">
-        <div class="sidebar-label">Sex</div>
-        <div class="pill-group" id="sex-pills">
-          <button class="pill-btn active" data-sex="all">All</button>
-          <button class="pill-btn" data-sex="male">Male</button>
-          <button class="pill-btn" data-sex="female">Female</button>
-        </div>
-      </div>
-
-      <div class="sidebar-divider"></div>
-
-      <div class="sidebar-section">
-        <div class="sidebar-label">Age Range</div>
-        <input type="range" id="age-slider" min="0" max="6" value="6" step="1" />
-        <div class="slider-row">
-          <span class="slider-val">20</span>
-          <span class="slider-val" id="age-max-label">80+</span>
-        </div>
-      </div>
-
-      <div class="sidebar-divider"></div>
-
-      <div class="sidebar-section">
-        <div class="sidebar-label">NHANES Cycles</div>
-        <input type="range" id="cycle-slider" min="0" max="8" value="8" step="1" />
-        <div class="slider-row">
-          <span class="slider-val">2001</span>
-          <span class="slider-val" id="cycle-max-label">2018</span>
-        </div>
-      </div>
-
-      <div class="sidebar-divider"></div>
-
-      <div class="sidebar-section">
-        <div class="toggle-row">
-          <span class="toggle-label">Compare mode</span>
-          <div class="toggle" id="compare-toggle" role="switch" aria-checked="false">
-            <div class="toggle-thumb"></div>
-          </div>
-        </div>
-      </div>
-
-      <div id="compare-group" style="display:none">
-        <div class="sidebar-section" style="padding-top:8px">
-          <div class="sidebar-label compare-bio-label">Compare with</div>
-          <div class="custom-select">
-            <select id="biomarker2-select">
-              <option value="hdl">HDL Cholesterol (mg/dL)</option>
-            </select>
-          </div>
-        </div>
-      </div>
-
-      <div class="sidebar-divider"></div>
-
-      <div class="sidebar-section sidebar-footer-section">
-        <div class="obs-badge">
-          Showing <span id="observation-badge">—</span> observations
-        </div>
-      </div>
-
-    </aside>
-
-    <!-- ── Main Panel ──────────────────────────────────────────────── -->
-    <main id="main-panel">
-
-      <!-- Metric cards -->
-      <div class="metric-row">
-        <div class="metric-card">
-          <div class="metric-label">Sample Size</div>
-          <div class="metric-value" id="metric-n">—</div>
-          <div class="metric-sub">weighted observations</div>
-        </div>
-        <div class="metric-card">
-          <div class="metric-label">Cycles</div>
-          <div class="metric-value" id="metric-cycles">—</div>
-          <div class="metric-sub" id="metric-cycles-range">2001 – 2018</div>
-        </div>
-        <div class="metric-card">
-          <div class="metric-label">Age Groups</div>
-          <div class="metric-value" id="metric-age-groups">—</div>
-          <div class="metric-sub">20–29 through 80+</div>
-        </div>
-      </div>
-
-      <!-- Primary chart -->
-      <div class="chart-container">
-        <div class="chart-header">
-          <div>
-            <div class="chart-title" id="chart-title">Total Cholesterol by Age Group</div>
-            <div class="chart-sub">NHANES 2001–2018 · Weighted population estimates · 95% CI</div>
-          </div>
-        </div>
-        <div class="chart-inner" id="chart1"></div>
-      </div>
-
-      <!-- Summary stat grid -->
-      <div class="summary-row" id="summary-stats">
-        <!-- Populated by renderSummaryStats() in charts.js -->
-        <div class="stat-card"><div class="stat-label">Age Trend</div><div class="stat-value">—</div><div class="stat-note">loading…</div></div>
-        <div class="stat-card"><div class="stat-label">Peak Age</div><div class="stat-value">—</div><div class="stat-note">loading…</div></div>
-        <div class="stat-card"><div class="stat-label">Highest Cycle</div><div class="stat-value">—</div><div class="stat-note">loading…</div></div>
-        <div class="stat-card"><div class="stat-label">Lowest Cycle</div><div class="stat-value">—</div><div class="stat-note">loading…</div></div>
-      </div>
-
-      <!-- Compare mode section -->
-      <div id="chart2-container" style="display:none">
-        <div class="compare-label" id="compare-label">⇄ Compare Mode</div>
-        <div class="chart-container">
-          <div class="chart-header">
+        <p id="status" role="status">Loading CDC-derived estimates…</p>
+        <div id="results" hidden>
+          <div class="section-heading">
             <div>
-              <div class="chart-title" id="chart2-title">HDL Cholesterol by Age Group</div>
-              <div class="chart-sub">NHANES 2001–2018 · Weighted population estimates · 95% CI</div>
+              <p class="eyebrow" id="selection"></p>
+              <h2 id="chart-title"></h2>
             </div>
+            <button id="download" type="button">Download profile CSV ↓</button>
           </div>
-          <div class="chart-inner" id="chart2"></div>
+          <p id="measure-note" class="notice"></p>
+          <div id="summary" class="summary"></div>
+          <div class="plot-card">
+            <p class="plot-key">
+              <span aria-hidden="true">● ━</span> Survey-weighted mean and 95%
+              confidence interval
+            </p>
+            <div id="chart"></div>
+            <p class="muted">
+              Intervals describe uncertainty in the group mean, not the range of
+              individual measurements. The axis does not necessarily start at
+              zero.
+            </p>
+          </div>
+          <div
+            class="table-wrap"
+            tabindex="0"
+            role="region"
+            aria-label="Age profile estimates table, scroll horizontally on small screens"
+          >
+            <table>
+              <caption id="table-caption"></caption>
+              <thead>
+                <tr>
+                  <th scope="col">Age</th>
+                  <th scope="col">Mean</th>
+                  <th scope="col">95% CI</th>
+                  <th scope="col">Observed n</th>
+                  <th scope="col">Missing n</th>
+                  <th scope="col">Weighted missing</th>
+                  <th scope="col">Design df</th>
+                </tr>
+              </thead>
+              <tbody id="table-body"></tbody>
+            </table>
+          </div>
+          <p id="eligibility"></p>
+          <p id="sources"></p>
         </div>
-      </div>
-
-      <!-- Footer attribution -->
-      <footer>
-        Data: CDC National Health and Nutrition Examination Survey (NHANES) ·
-        <a href="https://www.cdc.gov/nchs/nhanes/" target="_blank" rel="noopener">cdc.gov/nchs/nhanes</a> ·
-        Estimates use MEC examination weights per NCHS analytic guidelines.
-      </footer>
-
+      </section>
+      <section id="methods" class="methods">
+        <p class="eyebrow">HOW TO READ THIS</p>
+        <h2>Useful profiles. Bounded conclusions.</h2>
+        <div class="method-grid">
+          <article>
+            <h3>One period, different people</h3>
+            <p>
+              These are repeated cross-sectional surveys of the US civilian,
+              noninstitutionalized population. Age differences may reflect
+              cohort, medication, health, or survival differences. They are not
+              individual aging trajectories or causal effects. Assays and
+              sampling can change between cycles; this dashboard does not
+              estimate cross-cycle trends.
+            </p>
+          </article>
+          <article>
+            <h3>Survey design matters</h3>
+            <p>
+              Means use examination weights, or component-specific fasting
+              weights for glucose, triglycerides and calculated LDL. Standard
+              errors use R’s survey package, strata and primary sampling units.
+              The design is built before selecting age and sex domains.
+              Intervals use a t distribution with domain design degrees of
+              freedom.
+            </p>
+          </article>
+          <article>
+            <h3>Missingness stays visible</h3>
+            <p>
+              Only observed eligible measurements enter each mean. No
+              participant values are imputed by this project and no high values
+              are trimmed. CDC-provided values below detection limits are
+              retained. Missing counts refer to eligible, positive-weight
+              participants; they do not include interview-only participants or
+              zero-weight records. Item nonresponse can still bias estimates.
+            </p>
+          </article>
+          <article>
+            <h3>Exploration, not diagnosis</h3>
+            <p>
+              Adults are aged 20 or older. Age 80+ is an open-ended category,
+              not an age midpoint. Sex categories follow the released RIAGENDR
+              coding. Profiles are not clinical reference ranges, disease
+              prevalence estimates, or measures of biological age. No
+              statistical tests of group differences are performed.
+            </p>
+          </article>
+        </div>
+        <p>
+          <a href="https://wwwn.cdc.gov/nchs/nhanes/tutorials/weighting.aspx"
+            >CDC weighting guidance ↗</a
+          >
+          ·
+          <a
+            href="https://wwwn.cdc.gov/nchs/nhanes/tutorials/varianceestimation.aspx"
+            >CDC variance guidance ↗</a
+          >
+          · <a href="data/sources.json">Source files & hashes</a> ·
+          <a href="data/nhanes_data.json">All estimates (JSON)</a> ·
+          <a
+            href="https://github.com/aadityageddam-ux/nhanes-biomarker-dashboard"
+            >Code & reproducibility ↗</a
+          >
+        </p>
+      </section>
     </main>
-  </div>
-</div>
-
-<noscript>
-  <p style="padding:40px;text-align:center;font-family:sans-serif">
-    This dashboard requires JavaScript. Please enable JavaScript in your browser.
-  </p>
-</noscript>
-
-<!-- Script load order: filters → charts → app (dependency chain) -->
-<script src="js/filters.js?v=3"></script>
-<script src="js/charts.js?v=3"></script>
-<script src="js/app.js?v=3"></script>
-</body>
+    <footer>
+      Independent student analysis of CDC/NCHS public-use data. Not a CDC
+      product or endorsement.
+    </footer>
+  </body>
 </html>

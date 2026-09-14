@@ -6,3 +6,7 @@ __pycache__/
 .env
 
 .claude/
+pipeline/library/
+pipeline/cache/
+node_modules/
+test-results/
