@@ -7,9 +7,11 @@ The tests check implementation and provenance. They are not independent scientif
 All five Node data checks passed. The full browser suite passed all 324 selections,
 CSV export, a failed-data response, mobile layout and 200% zoom without JavaScript
 errors. Local browser testing used installed Chrome through Playwright 1.62.1.
-The CI workflow uses Playwright's matching Chromium download; CI has not yet run
-for this unpublished branch. The source manifest verification passed for all
-208 files. Dependency audit reported zero vulnerabilities.
+The CI workflow uses Playwright's matching Chromium download. The initial GitHub
+validation also passed ([run 34862986248](https://github.com/aadityageddam-ux/nhanes-biomarker-dashboard/actions/runs/34862986248)).
+The source manifest verification passed for all 208 files. Dependency audit
+reported zero vulnerabilities. A fresh local rebuild matched the committed
+estimates and mappings within numerical tolerance.
 
 ## Automated checks
 
