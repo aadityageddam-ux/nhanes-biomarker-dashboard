@@ -62,3 +62,7 @@ Sampling weights do not eliminate item-nonresponse bias or assay limitations. Op
 This rebuild replaces the earlier synthetic-data dashboard and its incorrect SD/√n uncertainty calculation. The prior synthetic generator and obsolete download paths have been removed.
 
 Independent student analysis; not an official CDC product or endorsement. Public data source: [CDC/NCHS NHANES](https://wwwn.cdc.gov/nchs/nhanes/).
+
+## License
+
+Released under the [MIT License](LICENSE).
